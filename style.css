@@ -1,0 +1,59 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 10px solid black;
+  background: linear-gradient(45deg, #20445c, #cdd0d4);
+}
+.inside-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 60%;
+  height: 60%;
+  box-sizing: border-box;
+  background: linear-gradient(45deg, #43205c, #cdd0d4);
+}
+.text-box {
+  width: 60%;
+}
+.text-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 800;
+  font-size: xx-large;
+}
+.inside-box-text {
+  display: flex;
+  box-sizing: border-box;
+  width: 80%;
+  height: 70%;
+  overflow: auto;
+  margin-left: 10px;
+}
+.shoe-img {
+  width: 500px;
+  position: absolute;
+  top: 84px;
+  right: 158px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.shoe:hover .shoe-img {
+  transform: scale(2);
+
+}
